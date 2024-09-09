@@ -1,0 +1,395 @@
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #b5e5f8;
+}
+
+header {
+    background-color: #080808;
+    color: #72cff7;
+    padding: 30px;
+}
+.banner {
+    list-style: none;
+    padding: 0;
+   display: flex;
+   justify-content: end; 
+}
+
+
+.svg-container {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40px; 
+    height: 40px; 
+    animation: bounce 2s ease-in forwards; 
+}
+#estrella1{
+    width: 40px;
+    height: 50px;
+    list-style: none;
+    fill: gold;
+    stroke: lightblue;
+  
+}
+   
+   
+.estrella2{
+    width: 30px;
+    height: 80px;
+    list-style: none;
+    fill: gold;
+    stroke: lightblue;
+}
+.estrella3{
+    width: 30px;
+    height: 80px;
+    list-style: none;
+    fill: gold;
+    stroke: lightblue;
+ 
+    
+}
+
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px); 
+    }
+}
+.banner li {
+    margin: 0;
+    text-align: end;
+}
+
+.banner a {
+    position: relative;
+    top: 20px;
+    margin: 15px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #3fd3f4;
+    border-radius: 8px;
+    color: #eef35c;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 2px 3px #f5f893;;
+}
+.banner a:active{
+    transform: translateY(2px); 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.banner a:hover {
+    background-color: #fff;
+    color: rgb(120, 212, 243);
+    
+}
+
+.padre{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(imagenes/argetina\ mundial.jpeg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 200px;
+    height: 250px;
+   
+}
+h1 {
+    font-size: 70px;
+    text-align: center;
+    color: white;
+}
+
+    
+.titulo-contenido{
+    margin-top: 40px;
+    margin-bottom: 150px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    
+    
+}
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 100px;
+    height: 300px;
+  
+
+    
+}
+
+.card {
+    max-width: 300px;
+    margin: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow:  12px 12px rgba(19, 19, 19, 0.1);
+    background-color: #acf9f4;
+    border:2px solid yellow;
+}
+.card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-content {
+    padding: 16px;
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+}
+
+
+button {
+   margin: 10px;
+    background-color: #0f0f0f;
+    color: yellow;
+    border: 2px solid #3fd3f4;
+    padding: 10px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 8px;
+}
+a {
+    text-decoration: none;
+    color: #080808;
+}
+
+button:hover {
+    background-color: #fff;
+    color: rgb(120, 212, 243);
+    cursor: pointer;
+}
+
+footer {
+    background-color: #fff;
+    color: #0a0a0a;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerstart {
+    max-width: 50px;
+    height: auto;
+    display: block;
+    margin-right: auto; 
+}
+
+.footerend {
+    margin-top: 10px;
+    margin-left: auto; 
+}
+
+
+
+/* ACA EMPIEZA LOS ESTILOS DE HISTORIA QUE NO COMPARTE CON INDEX */
+
+h2 {
+    text-align: center;
+    margin-top:60px;
+    margin-bottom: 50px;
+    font-size: 40px;
+    
+}
+
+.textoHistoria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    
+.card-historia {
+ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px 50px;
+    gap: 20px;
+
+}
+h3{
+    
+    width: 100%;
+    text-shadow: 2px 2px rgb(125, 219, 246);
+    text-align: center;
+    color: rgb(16, 16, 16);
+    font-size: 30px;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+     font-weight: bold;
+
+}
+
+.videoHistoria {
+    display: block;
+    padding: 5px;
+    background-color: black;
+    width: 70%;
+    margin-top: 1px;
+  
+}
+#miVideo {
+    padding: 5px;
+    background-color: black;
+    width: 99%;
+   margin: auto 0px;
+}
+.barraBotones{
+    margin-bottom: 0;
+
+}
+.audioContainer {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; /* Ajusta según tus preferencias */
+}
+
+audio {
+    max-width: 100%;
+}
+
+#playButton, #pauseButton, #restartButton{
+    margin: 15px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #3fd3f4;
+    border-radius: 8px;
+    color: #eef35c;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 2px 3px #f5f893;;
+}
+
+#playButton:active, #pauseButton:active, #restartButton:active{
+    transform: translateY(2px); 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+#playButton:hover, #pauseButton:hover, #restartButton:hover{
+    background-color: #fff;
+    color: rgb(120, 212, 243);
+    cursor: pointer;
+}
+
+
+/* aca arranca la pagina Juegos*/
+#piezas {
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    margin: auto;
+    justify-content: center;
+}
+
+#puzzle {
+    border: 1px solid black;
+    width: 318px;
+    height: 495px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+
+.pieza {
+    width: 106px;
+    height: 165px;
+    background-size: cover;
+    margin: 10px;
+}
+
+.placeholder {
+    background-color: #F2F2F2;
+    outline: 1px solid #333;
+    width: 106px;
+    height: 165px;
+    transition: 1s;
+}
+
+.placeholder.hover {
+    background-color: orange;
+}
+
+.placeholder .pieza {
+    margin: 0;
+    
+}
+
+#mensaje {
+    color: black;
+    text-align: center;
+    display: none;
+}
+
+.ganaste {
+    background-color: #B3D67C;
+}
+
+.ganaste #mensaje {
+    display: block;
+}
+
+.ganaste .placeholder {
+    outline: none;
+}
+
+.ganaste #piezas {
+    display: none;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.bodyBoton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin:0 ;
+}
+button {
+    margin: 15px;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid;
+    border-radius: 8px;
+    color: #eef35c;
+    transition: background-color 0.3s, color 0.3s;
+    box-shadow: 2px 3px #f5f893;;
+}
+.botonReinicio:active{
+    transform: translateY(2px); 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.botonReinicio:hover{
+    background-color: #fff;
+    color: rgb(120, 212, 243);
+    cursor: pointer;
+
+}
